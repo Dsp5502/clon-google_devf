@@ -7,7 +7,6 @@
 body {
   font-family: arial, sans-serif;
   line-height: normal;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,13 +106,13 @@ nav svg:active {
   display: block;
 }
 
-.logo-container {
+#logo {
   display: flex;
   justify-content: center;
   margin: 120px 0 40px;
 }
 
-.logo-container img {
+#logo img {
   width: 272px;
   height: 92px;
 }
@@ -131,7 +130,7 @@ nav svg:active {
   width: 100%;
 }
 
-.search-container input[type='text'] {
+.search-container #input-search {
   display: flex;
   z-index: 3;
   min-height: 52px;
@@ -143,29 +142,15 @@ nav svg:active {
   width: 584px;
   padding-left: 25px; /* Ajusta el valor según el ancho del icono izquierdo */
   padding-right: 25px;
+  text-indent: 20px;
+  outline: none;
 }
-.search-container input[type='text']:hover {
+.search-container #input-search:hover {
   background-color: #fff;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
 }
 
-.search-container button[type='submit'],
-.search-container button[type='button'] {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  margin-left: -40px;
-}
-
-.search-container button[type='submit'] {
-  color: #757575;
-}
-
-.search-container button[type='button'] {
-  color: #4285f4;
-}
 .search-container .search {
   height: 20px;
   line-height: 20px;
@@ -220,14 +205,15 @@ nav svg:active {
   vertical-align: middle;
 }
 
-.button-container {
+.btn-search {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 18px;
 }
 
-.button-container a {
+.btn-search #lucky,
+#search {
   align-items: center;
   background-color: #f8f9fa;
   border-radius: 4px;
@@ -246,7 +232,8 @@ nav svg:active {
   text-decoration: none;
 }
 
-.button-container a:hover {
+.btn-search #lucky,
+#search:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background-color: #f8f9fa;
   border: 1px solid #dadce0;
@@ -270,13 +257,14 @@ footer {
 .footer-left {
   padding: 15px 30px;
   border-bottom: 1px solid #dadce0;
-  font-size: 15px;
+  font-size: 14px;
   color: #70757a;
 }
 
 .footer-left a {
   color: #70757a;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .footer-right {
@@ -297,6 +285,7 @@ footer {
   color: #70757a;
   text-decoration: none;
   padding: 15px;
+  font-size: 14px;
 }
 .footer-right div a:hover {
   text-decoration: underline;

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Google</title>
+  <title>Clon Google</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,8 +36,10 @@
     </nav>
   </header>
 
+
+
   <main>
-    <div class="logo-container">
+    <div id="logo">
       <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
     </div>
     <div class="search-container">
@@ -49,7 +51,7 @@
             </path>
           </svg>
         </div>
-        <input type="text" name="search">
+        <input id="input-search" type="text" name="search">
 
         <div class="cont-icons-search icons-group">
           <div class="voice-search">
@@ -93,9 +95,9 @@
         </div>
       </form>
     </div>
-    <div class="button-container">
-      <a href="#">Buscar con Google</a>
-      <a href="#">Voy a tener suerte</a>
+    <div class="btn-search">
+      <a id="search" href="#">Buscar con Google</a>
+      <a id="lucky" href="#">Voy a tener suerte</a>
     </div>
     <div id="SIvCob">Ofrecido por Google en: <a
         href="https://www.google.com/setprefs?sig=0_w5F0v8kutURYw4GoBv3HVlwU6p8%3D&amp;hl=es-419&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjf6vqT9f7-AhWem2oFHYFMCmsQ2ZgBCBQ">Español
@@ -108,14 +110,16 @@
     </div>
     <div class="footer-right">
       <div>
-        <a href="#">Sobre Google </a>
-        <a href="#">Publicidad</a>
-        <a href="#">Negocios</a>
-        <a href="#">Cómo funciona la Búsqueda</a>
+        <a target="_blank" href="https://about.google/?fg=1">Sobre Google </a>
+        <a target="_blank"
+          href="https://www.google.com/intl/es_co/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&fg=1">Publicidad</a>
+        <a target="_blank"
+          href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&fg=1">Negocios</a>
+        <a target="_blank" href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a>
       </div>
       <div>
-        <a href="#">Privacidad</a>
-        <a href="#">Condiciones</a>
+        <a target="_blank" href="https://policies.google.com/privacy?hl=es-CO&fg=1">Privacidad</a>
+        <a target="_blank" href="https://policies.google.com/terms?hl=es-CO&fg=1">Condiciones</a>
         <a href="#">Preferencias</a>
       </div>
     </div>
